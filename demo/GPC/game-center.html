@@ -1,0 +1,509 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!-- SEO -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>赛事中心-GPC 游戏玩家的狂欢节</title>
+<link rel="stylesheet" href="css/public.css" />
+<style>
+body{background-image: url(images/bg.jpg);}
+.container{margin-top: 180px;}
+.game-list{padding:150px 0;}
+.gl-item{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+.gl-item .round , .gl-item .round-big{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #A66D6C;
+	margin-left: -10px;
+	margin-top: -10px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+}
+.gl-item .round-big{
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+.gl-panel{
+	width: 350px;
+	height: 250px;
+	background-color: #FFF;
+	position: absolute;
+	top: -130px;
+}
+.gli-left .gl-panel{
+	left: -420px;
+}
+.gli-right .gl-panel{
+	right: -420px;
+}
+.gl-panel:after, .game-detail:after{
+	content: '';
+	width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+	position: absolute;
+	top: 130px;
+}
+.gli-left .gl-panel:after{
+    border-left: 50px solid #FFF;
+	right: -50px;
+}
+.gli-right .gl-panel:after{
+    border-right: 50px solid #FFF;
+	left: -50px;
+}
+.game-detail{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(150, 81, 80, 0.8);
+	position: absolute;
+	left: 0;
+	top:0;
+	display: none;
+}
+.gl-panel:hover .game-detail{
+	display: block;
+}
+.gli-left .game-detail:after{
+    border-left: 50px solid #AB7473;
+	right: -50px;
+	z-index: 1;
+}
+.gli-right .game-detail:after{
+    border-right: 50px solid #AB7473;
+	left: -50px;
+	z-index: 1;
+}
+.glp-imgBor{
+	width: 100%;
+	height: 130px;
+	position: relative;
+	overflow: hidden;
+}
+.glp-panel{
+	width: 100%;
+	background-color: #004F4B;
+	background-color: rgba(0,79,75,0.8);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.glpp-border{
+	color: #FFF;
+	font-size: 16px;
+	margin: 5px;
+}
+.glpp-border span{
+	color: #A66D6C;
+}
+.gl-textBor{
+	margin: 5px 20px;
+}
+.glt-title{
+	color: #A66D6C;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+.glt-time{
+	color: #939292;
+	font-size: 14px;
+}
+.glt-text{
+	color: #565656;
+	font-size: 14px;
+}
+.gpl-time{
+	color:#FFF;
+	font-size: 14px;
+	line-height: 14px;
+	border-radius: 5px;
+	background-color: #A66D6C;
+	padding: 2px 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gpl-time:before{
+	content:'';
+	width: 0;
+    height: 0;
+    border-top: 20px solid #A66D6C;
+    border-left: 20px solid transparent; 
+	position: absolute;
+	left: 0;
+	bottom: -17px;
+}
+.gd-box{
+	padding: 5px;
+}
+.gd-title{
+	color: #FFF;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 5px 0;
+}
+.gd-text{
+	color: #FFF;
+	font-size: 14px;
+}
+.gd-link{
+	width: 100px;
+	color:#FFF;
+	font-size: 14px;
+	text-align: center;
+	margin-left: -50px;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+}
+.gd-link .banner-img{
+	width: 50px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<img class="web-logo" src="images/logo.png"/>
+		<div class="user-bar">
+			<img class="ub-img" src="images/r.png" />
+			<span>亲爱的玩家，您可以</span>
+			<a href="http://www.baidu.com/">登录</a>
+			<span>或者</span>
+			<a href="http://www.baidu.com/">注册</a>
+			</div>
+		<div class="header-nav clear">
+			<a class="header-item" href="index.html">
+				<span class="text">首页</span>
+				<span class="subText">Home</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">新闻</span>
+				<span class="subText">News</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">视频</span>
+				<span class="subText">Video</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">攻略</span>
+				<span class="subText">Raiders</span>
+			</a>
+			<a class="header-item" href="javascript:;">
+				<span class="text">图文并茂</span>
+				<span class="subText">Photo And Title</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">博文故事</span>
+				<span class="subText">Story</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">GPC联赛</span>
+				<span class="subText">League Match</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">论坛</span>
+				<span class="subText">Forum</span>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<img class="banner-img" src="images/bd.png" />
+		<div class="label-box" style="padding:20px 0;">
+			<h1 class="lb-title" style="font-size:14px;">首页 > 赛事中心</h1>
+		</div>
+		<ul class="game-list">
+			<li class="gl-item gli-left">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-right">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-left">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-right">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-left">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-right">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-left">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+			<li class="gl-item gli-right">
+				<span class="round-big"></span>
+				<div class="gl-panel">
+					<div class="glp-imgBor">
+						<img class="banner-img" src="images/slides/slides1.jpg" />
+						<div class="glp-panel">
+							<p class="glpp-border">已有<span>235235</span>人关注</p>
+						</div>
+						<div class="gpl-time">
+							60天<br/>后结束
+						</div>
+					</div>
+					<div class="gl-textBor">
+						<h2 class="glt-title">2015年GPC风暴英雄联赛</h2>
+						<p class="glt-time">活动时间：2015.07.22-2015.09.22</p>
+						<p class="glt-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+					</div>
+					<div class="game-detail">
+						<div class="gd-box">
+							<h2 class="gd-title">活动简介</h2>
+							<p class="gd-text text-warp">备受瞩目的GPC联赛之风暴英雄已于7月22号正式开幕，象征着荣耀和梦想的赛季终于到来。<br/>这是新的开始！英雄，去超越吧！</p>
+							<a class="gd-link" href="javascript:alert('没有详情');">
+								<img  class="banner-img"src="images/jian.png" />
+								活动详情
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="gl-item"><span class="round"></span></li>
+		</ul>
+	</div>
+	<!-- 底部 -->
+	<div class="bottom-nav">
+		<ul class="clear">
+			<li class="bn-item">
+				<h2 class="bn-title">联系我们</h2>
+				<a class="bn-link left" href="http://www.baidu.com/">TEL:17756037679</a>
+				<a class="bn-link left" href="http://www.baidu.com/">E-MAIL:nhm910924@163.com</a>
+			</li>
+			<li class="bn-item">
+				<h2 class="bn-title">推荐板块</h2>
+				<a class="bn-link center" href="http://www.baidu.com/">视频中心</a>
+				<a class="bn-link center" href="http://www.baidu.com/">图文故事</a>
+				<a class="bn-link center" href="http://www.baidu.com/">互动论坛</a>
+			</li>
+			<li class="bn-item">
+				<h2 class="bn-title">关于我们</h2>
+				<a class="bn-link center" href="http://www.baidu.com/">合作洽谈</a>
+				<a class="bn-link center" href="http://www.baidu.com/">反馈建议</a>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/jscript" src="js/public.js"></script>
+<script type="text/jscript" src="js/slides.js"></script>
+<script>
+	$(function(){
+		
+			
+		//窗口适应，防止奔溃
+		$(window).resize(function(){
+			var win_width = $(window).width();
+			$('#slides-box, .header').css('width', win_width < 1000 ? '1000px' : '100%');
+		});
+		$(window).resize();
+	});
+</script>
+</html>

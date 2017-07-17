@@ -1,0 +1,659 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!-- SEO -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>图文并茂-GPC 游戏玩家的狂欢节</title>
+<link rel="stylesheet" href="css/public.css" />
+<style>
+.news-box{width:100%;overflow:hidden;position:relative}
+.news-list{position:relative}
+.news-item{width:100%;position:relative;float:left}
+.news-item .nbn-box{position:absolute;left:0;bottom:0;z-index:5}
+.news-btm-nav{width:100%;height:80px;position:absolute;left:0;bottom:0}
+.nbn-box{color:#FFF;margin-right:300px;padding:10px}
+.nbn-title{font-size:18px;font-weight:normal}
+.nbn-text{height:38px;font-size:14px;overflow:hidden}
+.nbn-btns{width:100%;text-align:center;margin-top:-15px;position:absolute;left:0;top:50%;}
+.nbn-btn,.nbn-btn-active{width:30px;height:30px;background-image:url(images/d.png);background-position:-66px -108px;margin:0 5px;display:inline-block;}
+.nbn-btn-active{background-position: 1px -108px}
+.ptc-left{width: 60%;margin-right:1.2%;position:relative;float:left}
+.ptcl-btm-nav{width:100%;background-color:rgba(0,0,0,0.5);position:absolute;left:0;bottom:0}
+.ptcl-box{margin:10px;margin-right: 40px}
+.ptcl-text,.ptcr-text{color:#FFF;font-size:14px;padding: 2px 0}
+.ptcl-num{width:30px;height:30px;color:#A66D6C;font-size:14px;font-style:normal;line-height:40px;text-align:center;background-image:url(images/e.png);background-position:-62px -9px;position:absolute;right:5px;top:15px}
+.p-icon{height: 16px;margin-right:5px}
+.ptc-right{width:38.8%;float:left;}
+.ptcr-item{padding:2px 70px 2px 40px;position: relative;}
+.ptcr-num,.ptcr-num-active{width:30px;height:30px;color:#A66D6C;font-size:14px;font-style:normal;line-height:40px;text-align:center;background-image:url(images/e.png);background-position:-62px -9px;position:absolute;left:0;top:10px}
+.icon{width:28px;height:28px;background-image:url(images/d.png);}
+.icon-user{background-position: -182px -10px;margin-top:-10px;position:relative;top:7px;display:inline-block;}
+.ptcr-count{color:#FFF;font-size:14px;margin-top:-10px;position:absolute;top:50%;right:0;}
+.pl-item,.pl-item-active{color:#FFF;font-size:16px;border-bottom: 2px solid transparent;margin:0 10px;float:left;cursor:pointer;}
+.pl-item-active{border-bottom-color:#A66D6C}
+.photo-lists{margin:0;padding:0;}
+.photo-box{display:none;}
+.fluid-box{width:25%;float:left}
+.fluid-item{padding:2px}
+.fluid-panel{background-color:#FFF;padding:10px}
+.fp-title{color:#393939;font-size:14px;}
+.fp-text{color:#908F8F;font-size:12px;}
+.icon-good{height:24px;background-position: -12px -16px;position:relative;top:5px;display:inline-block}
+.icon-msg{height:24px;background-position: -71px -15px;position:relative;top:8px;display:inline-block}
+.pf-view{color:#908F8F;font-size:12px;text-align:right}
+.pf-view span{margin: 0 10px;}
+.pf-view .icon{margin: 0 5px;}
+body{background-image: url(images/bg.jpg);}
+.container{margin-top: 180px;}
+
+.vl-item{display:none;}
+.vl-item-active{display:block;}
+.vll-item{width:33.332%;margin-bottom:10px;float:left;}
+.vll-border{margin:5px;display:block;}
+.vll-text{height:38px;color:#FFF;font-size:14px;overflow:hidden;}
+.vll-tag{color:#FFF;font-size:14px;padding: 5px 0;}
+.vvlt-icon{height:14px;margin-right:4px;position:relative;top:2px;}
+.vvlt-time{float:right;}
+.vb-item{width: 20%;float:left;}
+</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<img class="web-logo" src="images/logo.png"/>
+		<div class="user-bar">
+			<img class="ub-img" src="images/r.png" />
+			<span>亲爱的玩家，您可以</span>
+			<a href="http://www.baidu.com/">登录</a>
+			<span>或者</span>
+			<a href="http://www.baidu.com/">注册</a>
+			</div>
+		<div class="header-nav clear">
+			<a class="header-item" href="index.html">
+				<span class="text">首页</span>
+				<span class="subText">Home</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">新闻</span>
+				<span class="subText">News</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">视频</span>
+				<span class="subText">Video</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">攻略</span>
+				<span class="subText">Raiders</span>
+			</a>
+			<a class="header-item" href="javascript:;">
+				<span class="text">图文并茂</span>
+				<span class="subText">Photo And Title</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">博文故事</span>
+				<span class="subText">Story</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">GPC联赛</span>
+				<span class="subText">League Match</span>
+			</a>
+			<a class="header-item" href="javascript:alert('建设中');">
+				<span class="text">论坛</span>
+				<span class="subText">Forum</span>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<img class="banner-img" src="images/videos.png" />
+		<div class="label-box" style="padding:20px 0;">
+			<h1 class="lb-title" style="font-size:14px;">首页 > 视频中心</h1>
+		</div>
+		<div class="news-box" id="news-box">
+			<ul class="news-list clear">
+				<li class="news-item">
+					<a href="http://www.baidu.com/"><img class="banner-img" src="images/slides/slides1.jpg" /></a>
+				</li>
+				<li class="news-item">
+					<a href="http://www.baidu.com/"><img class="banner-img" src="images/slides/slides1.jpg" /></a>
+				</li>
+				<li class="news-item">
+					<a href="http://www.baidu.com/"><img class="banner-img" src="images/slides/slides1.jpg" /></a>
+				</li>
+			</ul>
+			<div class="news-btm-nav">
+				<ul class="nbn-btns clear">
+					<li class="nbn-btn-active"></li>
+					<li class="nbn-btn"></li>
+					<li class="nbn-btn"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="label-box">
+			<h1 class="lb-title" style="float:left">最新视频</h1>
+			<ul class="photo-list clear" id="zxsp">
+				<li class="pl-item-active">风暴英雄</li>
+				<li class="pl-item">暗黑破坏神</li>
+				<li class="pl-item">炉石传说</li>
+			</ul>
+		</div>
+		<div class="photo-text-charts clear">
+			<div class="ptc-left">
+				<ul class="video-list" id="zxsp-list">
+					<li class="vl-item-active">
+						<ul class="vl-list clear">
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="vl-item">
+						<ul class="vl-list clear">
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="vl-item">
+						<ul class="vl-list clear">
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+							<li class="vll-item">
+								<a class="vll-border" href="http://www.baidu.com">
+									<div class="vll-image">
+										<img class="banner-img" src="images/slides/slides1.jpg"/>
+									</div>
+									<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+									<div class="vll-tag">
+										<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+										<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<ul class="ptc-right clear">
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">1</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">2</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">3</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">4</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">5</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">6</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+				<li class="ptcr-item">
+					<a href="http://www.baidu.com/">
+						<i class="ptcr-num">7</i>
+						<p class="ptcr-text text-notWarp">秀你一脸27：：河流之王，请叫我防御塔搬运工</p>
+						<p class="ptcr-text"><img class="p-icon" src="images/r.png"/>GPC视频（作者）</p>
+						<p class="ptcr-count"><i class="icon icon-user"></i>3.3万</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="label-box">
+			<h1 class="lb-title" style="float:left">赛事视频</h1>
+			<ul class="photo-list clear" id="competition-video">
+				<li class="pl-item-active">风暴英雄</li>
+				<li class="pl-item">暗黑破坏神</li>
+				<li class="pl-item">炉石传说</li>
+			</ul>
+		</div>
+		<ul class="video-list2" id="competition-list">
+			<li class="vl2-item">
+				<ul class="video-box clear">
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="vl2-item"></li>
+			<li class="vl2-item"></li>
+		</ul>
+		<div class="label-box">
+			<h1 class="lb-title"style="float:left">趣味/搞笑视频</h1>
+			<ul class="photo-list clear" id="qw-video">
+				<li class="pl-item-active">风暴英雄</li>
+				<li class="pl-item">暗黑破坏神</li>
+				<li class="pl-item">炉石传说</li>
+			</ul>
+		</div>
+		<ul class="video-list2" id="qw-list">
+			<li class="vl2-item">
+				<ul class="video-box clear">
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+					<li class="vb-item">
+						<a class="vll-border" href="http://www.baidu.com">
+							<div class="vll-image">
+								<img class="banner-img" src="images/slides/slides1.jpg"/>
+							</div>
+							<p class="vll-text text-warp">[LSP2015]0721夏季赛保级赛第三轮ADGvsKXH_1</p>
+							<div class="vll-tag">
+								<p class="vvlt-time"><img class="vvlt-icon" src="images/s_03.png"/>10小时以前</p>
+								<p class="vvlt-text"><img class="vvlt-icon" src="images/s_04.png"/>3.2万</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="vl2-item"></li>
+			<li class="vl2-item"></li>
+		</ul>
+	</div>
+	<div style="height:300px;"></div>
+	<!-- 底部 -->
+	<div class="bottom-nav">
+		<ul class="clear">
+			<li class="bn-item">
+				<h2 class="bn-title">联系我们</h2>
+				<a class="bn-link left" href="http://www.baidu.com/">TEL:17756037679</a>
+				<a class="bn-link left" href="http://www.baidu.com/">E-MAIL:nhm910924@163.com</a>
+			</li>
+			<li class="bn-item">
+				<h2 class="bn-title">推荐板块</h2>
+				<a class="bn-link center" href="http://www.baidu.com/">视频中心</a>
+				<a class="bn-link center" href="http://www.baidu.com/">图文故事</a>
+				<a class="bn-link center" href="http://www.baidu.com/">互动论坛</a>
+			</li>
+			<li class="bn-item">
+				<h2 class="bn-title">关于我们</h2>
+				<a class="bn-link center" href="http://www.baidu.com/">合作洽谈</a>
+				<a class="bn-link center" href="http://www.baidu.com/">反馈建议</a>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/jscript" src="js/public.js"></script>
+<script type="text/jscript" src="js/slides.js"></script>
+<script>
+	$(function(){
+		var news_pic = new MoveSlides('#news-box',{
+			autoPlay: 2e3
+			,slided: function(active){
+				var childs = $('.nbn-btns').children();
+				childs.attr('class', 'nbn-btn').eq(active).attr('class','nbn-btn-active');
+			}
+		});
+		
+		$('.nbn-btn,.nbn-btn-active').on('click', function(){
+			news_pic.setActive($(this).index());
+		});
+		$('#zxsp li').on('click mouseover',function(){
+			var childs = $(this).parent().children(),index = $(this).index();
+			childs.attr('class','pl-item').eq(index).attr('class','pl-item-active');
+			$('#zxsp-list').children().hide().eq(index).show();
+		});
+		$('#competition-video li').on('click mouseover',function(){
+			var childs = $(this).parent().children(),index = $(this).index();
+			childs.attr('class','pl-item').eq(index).attr('class','pl-item-active');
+			$('#competition-list').children().hide().eq(index).show();
+		});
+		$('#qw-video li').on('click mouseover',function(){
+			var childs = $(this).parent().children(),index = $(this).index();
+			childs.attr('class','pl-item').eq(index).attr('class','pl-item-active');
+			$('#qw-list').children().hide().eq(index).show();
+		});
+		
+		//窗口适应，防止奔溃
+		$(window).resize(function(){
+			var win_width = $(window).width();
+			$('#slides-box, .header').css('width', win_width < 1000 ? '1000px' : '100%');
+		});
+		$(window).resize();
+	});
+</script>
+</html>

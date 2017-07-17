@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>效果展示</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/effectshow.main.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<script src="../js/jquery.1.9.1.min.js"></script>
+	<script src="../js/effectshow.js"></script>
+	<script>
+        var page = 1;
+        var page_php="data/page_all_3.php";
+		function ajax_effectshow(){
+	                     $.ajax({
+		               	   	url:"data/page_test_3.php",
+		               	   	type:"get",
+		               	   	// datatype:"text",
+		               	   	data:{p:page},
+		                    success:function(data){
+		                     $(".effect_context").append(data);
+		                    }
+		               	   });
+	                  }  
+	</script>
+
+</head>
+<body>
+    <!-- <div class="mask_div show_num_id_div_anim"></div> -->
+    <div class="sub_header">
+        <div class="header_logo_bg">
+        	<div class="header_logo">
+    	    	<a href="#" class="nav_img"><img src="../images/logo.png" alt="logo"></a>
+    	    	<div class="nav_add"><span>当前位置：</span><a href="../index.html" class="nav_a">首页</a><span>></span><a href="#">装修效果</a></div>
+    	    </div>
+        </div>
+    	<div class="sub_header_nav">
+    		<h1>效果展示</h1>
+    		<h2>Results show</h2>
+    	</div>
+    </div>
+	<div class="wrap_context">
+	    <div id="effect_nav" class="effect_nav">
+			<ul>
+				<li><a href="effectshow_1.html"><span>普通住宅</span></a></li>
+				<li><a href="effectshow_2.html"><span>公寓</span></a></li>
+				<li><a href="effectshow_3.html"><span class="effect_nav_act">别墅</span></a></li>
+				<li><a href="effectshow_4.html"><span>会所</span></a></li>
+				<li><a href="effectshow_5.html"><span>跃层</span></a></li>
+			</ul>
+			<hr>
+		</div>
+		<div class="effect_context">
+			<!-- <div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div> -->
+			<div class="page_nav">
+
+				<span id="start_page">首页</span>
+				<span id="prev_page">上一页</span>
+				<span id="next_page">下一页</span>
+				<span id="end_page">尾页</span>
+				<span id="all_page"></span>
+				<span id="now_page"></span>
+			</div>
+		</div>
+	</div>
+			<!--  底部 -->
+		<div class="footer">
+		    <div class="footer_callme">
+				<div class="footer_logo">
+					<img src="../images/logo.png" alt="logo">
+				</div>
+				<div class="about_me">
+				    <h2>关于 我们</h2>
+		            <p class="me_introduce">新皖南工长俱乐部是一家优秀的装修公司，感谢你的选择。新皖南工长俱乐部是一家优秀的装修公司，感谢你的选择。新皖南工长俱乐部是一家优秀的装修公司，感谢你的选择。</p>
+				    <hr class="about_me_hr">
+				    <p class="me_email">549008556@qq.com</p>
+				    <hr class="about_me_hr">
+				    <p class="me_phone">P:542871241</p>
+				    <hr class="about_me_hr">
+				    <p class="me_add">新皖南工长俱乐部位于北京市朝阳区北沙滩123号</p>
+				</div>
+			</div>
+			<div class="footer_nav"> 
+			    <div class="footer_text_con">
+					<div class="footer_nav_con">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">产品展示</a></li>
+							<li><a href="#">装修流程</a></li>
+							<li><a href="#">设计报价</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="footer_nav_text">
+					    <span><span class="footer_club_name">新皖南工长俱乐部 </span>  版权所有</span>
+					</div>
+				</div>
+			</div>
+	    </div>
+	
+</body>
+</html>

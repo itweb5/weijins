@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/JSXTransformer.js"></script>   
+    <script src="../build/jquery.min.js"></script> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+       .commentBox{
+          /*text-align: center;*/
+          width:600px;
+          margin:0 auto;
+          padding-top: 500px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          background: #eee;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+      var data = [
+        {author: "Pete Hunt", text: "This is one comment2"},
+        {author: "Jordan Walke", text: "This is *another* comment"}
+      ];
+      var CommentBox = React.createClass({
+        render:function(){
+          return(
+            <div className="commentBox">
+              <h1>评论列表</h1>
+              <CommentList data={this.props.data} />
+              <CommentForm />
+            </div>
+            );
+        }
+      });
+      var CommentList = React.createClass({
+        render: function() {
+          var dongtaiCons = this.props.data.map(function(dataContext){
+            return (<Comment author={dataContext.author}>{dataContext.text}</Comment>);
+          });
+          return (
+            <div className="commentList">
+              {dongtaiCons}
+            </div>
+          );
+        }
+      });
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              Hello, world! I am a CommentForm.
+            </div>
+          );
+        }
+      });
+      var Comment = React.createClass({
+        render: function() {
+          return (
+            <div className="comment">
+              <h2 className="commentAuthor">
+                {this.props.author}
+              </h2>
+              {this.props.children}
+            </div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <CommentBox data={data} />,
+        document.getElementById("example")
+        );
+      
+    </script>
+  </body>
+</html>

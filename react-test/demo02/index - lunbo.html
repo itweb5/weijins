@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/JSXTransformer.js"></script>   
+    <script src="../build/jquery.min.js"></script> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+      var ImgSroll = React.createClass({
+      	getInitialState:function(){
+          
+          return {
+            imgWidth:"670",
+            autoplay:"1",
+            number:0,
+            imgSrcs:[
+               {
+                url:'images/1.jpg',
+                index:1,
+                imgref:'imgNum1'
+               },
+               {
+                url:'images/2.jpg',
+                index:2,
+                imgref:'imgNum2'
+               },
+               {
+                url:'images/3.jpg',
+                index:3,
+                imgref:'imgNum3'
+               },
+               {
+                url:'images/4.jpg',
+                index:4,
+                imgref:'imgNum4'
+
+               },
+               {
+                url:'images/5.jpg',
+                index:5,
+                imgref:'imgNum5'
+               }
+            ]
+          }	
+      	},
+      	
+        numButtonClick:function(){
+            var li_wid = this.state.imgWidth;
+            var imgSrcs = this.state.imgSrcs;
+            var maxnumber = imgSrcs.length;
+            var index = $(this).index()+1
+            var number = this.state.number; 
+            this.setState({
+              number : number+1
+            });
+            var distance = -(li_wid)*this.state.number;
+            $('.img-ul').stop().animate({
+                   left:distance
+              });
+            
+            /*this.state.number==5?this.state.number=0:this.state.number;*/
+          
+            console.log(this.state.number)
+            /*$(document).on("click",".img-buttton-li",function(){
+               $(this).addClass("active").siblings().removeClass("active");
+                var index = $(this).index();
+                number = index;
+                var distance = -(li_wid)*index;
+                $('.img-ul').stop().animate({
+                   left:distance
+              });
+            });*/
+            
+        },
+        prevButtonClick:function(){
+            var li_wid = this.state.imgWidth;
+            var imgSrcs = this.state.imgSrcs;
+            var maxnumber = imgSrcs.length;
+            var maxnumber2 = maxnumber-(maxnumber+1);
+            number--;
+            number==maxnumber2?number=maxnumber-1:number;
+            $(".img-buttton-li").eq(number).addClass("active").siblings().removeClass("active");
+            var distance = -(li_wid)*number;
+            $('.img-ul').stop().animate({
+               left:distance
+              }); 
+        },
+        nextButtonClick:function(){
+            var li_wid = this.state.imgWidth;
+            var imgSrcs = this.state.imgSrcs;
+            var maxnumber = imgSrcs.length;
+            number++;
+            number==maxnumber?number=0:number;
+            $(".img-buttton-li").eq(number).addClass("active").siblings().removeClass("active");
+            var distance = -(li_wid)*number;
+            $('.img-ul').stop().animate({
+               left:distance
+              }); 
+        },
+        render:function(){
+            var self = this;
+            /*this.numButtonClick();*/
+            /*var tabChange = setInterval(this.nextButtonClick,3000);
+            $(document).on("mouseover",".img-wrap",function(){
+                  clearInterval(tabChange);
+                });
+            $(document).on("mouseout",".img-wrap",function(){
+                 tabChange=setInterval(this.nextButtonClick,3000);
+                }); */  
+            var imgSrcs= this.state.imgSrcs.map(function(imgSrc){
+              return (
+                <li className="img-li"><img src={imgSrc.url} ></li>
+              )
+            });
+            /*var imgIndexs= this.state.imgSrcs.map(function(imgIndex){
+              return (
+                <li className="img-buttton-li" ref={imgIndex.imgref} index={imgIndex.index}>{imgIndex.index}</li>
+              )
+            });*/
+            
+            return (
+                <div className="img-wrap">
+                  <ul className="img-ul">{imgSrcs}</ul>
+                  <div>
+                     <ul className="img-buttton-ul">
+                        <li className="img-buttton-li active" index="1" ref="num1"onClick={this.numButtonClick}>1</li>
+                        <li className="img-buttton-li" index="2" onClick={this.numButtonClick}>2</li>
+                        <li className="img-buttton-li" index="3" onClick={this.numButtonClick}>3</li>
+                        <li className="img-buttton-li" index="4" onClick={this.numButtonClick}>4</li>
+                        <li className="img-buttton-li" index="5" onClick={this.numButtonClick}>5</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <button className="img-button-prev img-button" onClick={self.prevButtonClick}>&lt;</button>
+                     <button className="img-button-next img-button" onClick={self.nextButtonClick}>&gt;</button>
+                  </div> 
+                </div>
+              )
+           
+        }
+      });
+      ReactDOM.render(
+        <ImgSroll />,
+        document.getElementById("example")
+        );
+      $(function(){
+        function hjc(){
+
+        }
+      })
+    </script>
+  </body>
+</html>

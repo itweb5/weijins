@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+.img-wrap{
+	width:670px;
+	overflow: hidden;
+	margin:0 auto;
+	position: relative;
+}
+.img-ul{
+	width:3350px;
+	position: relative;
+}
+.img-li{
+	float: left;
+}
+.img-buttton-ul{
+    position: absolute; 
+	bottom: 20px;
+	left: 0;
+	font-size: 0;
+	width: 100%;
+	text-align: center;
+}
+.img-buttton-li{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.img-button{
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	margin-top: -30px;
+	background: rgba(0,0,0,.5);
+	/*opacity:0.57;filter:alpha(opacity=57);*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8863370b,endColorstr=#8863370b);
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-size: 40px;
+	display: none;
+}
+.img-button-prev{
+    left: 0;
+}
+.img-button-next{
+	right: 0;
+}
+.img-wrap:hover .img-button{ 
+				display: block;
+				cursor: pointer;
+			}
+.active { background-color:#a00;}

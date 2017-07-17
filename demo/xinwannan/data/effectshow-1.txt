@@ -1,0 +1,32 @@
+﻿                        <div class="effect_con_box">
+				
+						<a href="effectshow_sub_1_1.html"><img src="../images/effect_img_01.jpg" alt=""></a>
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<a href="effectshow_sub_1_1.html"><img src="../images/effect_img_01.jpg" alt=""></a>
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>
+			<div class="effect_con_box">
+				
+						<img src="../images/effect_img_01.jpg" alt="">
+						<div class="images_text">
+							<h2>中海公石馆案例 咖啡厅-混搭风格</h2>
+							<p>中海公石馆楼盘位于二环，130平，这是客厅，时尚的欧中式混搭风格。</p>
+						</div>
+			</div>

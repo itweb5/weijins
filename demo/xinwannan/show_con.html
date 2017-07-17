@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.1.9.1.min.js"></script>
+</head>
+<style>
+    .test{
+        position: absolute;
+        top: 400px;
+        left: 500px;
+    }
+    #show_con{
+        width: 600px;
+        height: 200px;
+    }
+</style>
+<script>
+    $(function(){
+        $("#jiazai1").click(function(){
+            $.ajax({
+                url:"data/show_con1.php",
+                type:"get",
+                /*datatype:"text",*/
+                data: { s: $("#show_con").val()},
+                success:function(data){
+                   $(".con").html(data);
+                }
+            });
+        })
+        $("#jiazai2").click(function(){
+            $.ajax({
+                url:"data/show_con2.php",
+                type:"get",
+                /*datatype:"text",*/
+                data: { s: $("#show_con").val()},
+                success:function(data){
+                   $(".con").html(data);
+                }
+            });
+        })
+        $("#jiazai3").click(function(){
+            $.ajax({
+                url:"data/show_con3.php",
+                type:"get",
+                /*datatype:"text",*/
+                data: { s: $("#show_con").val()},
+                success:function(data){
+                   $(".con").html(data);
+                }
+            });
+        })
+        $("#jiazai4").click(function(){
+            $.ajax({
+                url:"data/show_con4.php",
+                type:"get",
+                /*datatype:"text",*/
+                data: { s: $("#show_con").val()},
+                success:function(data){
+                   $(".con").html(data);
+                }
+            });
+        })
+        $("#jiazai5").click(function(){
+            $.ajax({
+                url:"data/show_con5.php",
+                type:"get",
+                /*datatype:"text",*/
+                data: { s: $("#show_con").val()},
+                success:function(data){
+                   $(".con").html(data);
+                }
+            });
+        })
+    })
+    
+    
+</script>
+<body>
+    <div class="test">
+        <span>效果展示内容增加:</span><input type="text" id="show_con">
+        <input type="button" value="提交-普通住宅1" id="jiazai1">
+        <input type="button" value="提交-公寓2" id="jiazai2">
+        <input type="button" value="提交-别墅3" id="jiazai3">
+        <input type="button" value="提交-会所4" id="jiazai4">
+        <input type="button" value="提交-跃层5" id="jiazai5">
+        <ul class="con">
+            
+        </ul>
+    </div>
+    
+</body>
+</html>
